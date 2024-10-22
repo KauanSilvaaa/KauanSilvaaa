@@ -1,0 +1,65 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="contato.css">
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-md p-8 bg-white shadow-md rounded">
+   <h1 class="text-center text-2xl font-bold mb-6">
+    CONTATOS
+   </h1>
+   <form>
+    <div class="mb-4">
+     <label class="block text-gray-700 font-bold mb-2" for="name">
+      Nome: *
+     </label>
+     <input class="w-full px-3 py-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500" id="name" placeholder="Seu nome" type="text"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 font-bold mb-2" for="email">
+      E-mail: *
+     </label>
+     <input class="w-full px-3 py-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500" id="email" placeholder="Seu e-mail" type="email"/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 font-bold mb-2" for="subject">
+      Assunto: *
+     </label>
+     <input class="w-full px-3 py-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500" id="subject" placeholder="Indique qual o assunto" type="text"/>
+    </div>
+    <div class="mb-4 relative">
+     <label class="block text-gray-700 font-bold mb-2" for="message">
+      Mensagem: *
+     </label>
+     <textarea class="w-full px-3 py-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500" id="message" placeholder="Digite sua mensagem"></textarea>
+     <i class="fas fa-pen absolute right-3 bottom-3 text-green-500">
+     </i>
+    </div>
+    <div class="mb-4">
+     <div class="flex items-center">
+      <input class="mr-2" id="not-robot" type="checkbox"/>
+      <label class="text-gray-700" for="not-robot">
+       Não sou um robô
+      </label>
+     </div>
+     <div class="mt-2">
+      <img alt="reCAPTCHA" height="50" src="https://storage.googleapis.com/a1aa/image/mptZTpgvqsZQKRcCNnBCY0gZl0wsb3MLdz8iNAuoKTRUyU6E.jpg" width="100"/>
+     </div>
+    </div>
+    <div class="text-center">
+     <button class="w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600">
+      Enviar mensagem
+     </button>
+    </div>
+   </form>
+  </div>
+ </body>
+</html>
